@@ -3,6 +3,26 @@
 <head>
 	<title>ADMIN</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+  function showAlert1() { 
+  	<?php
+  	       $username = "";
+	$email    = "";
+	$errors = array(); 
+	$_SESSION['success'] = "";
+
+
+	$db = mysqli_connect('localhost', 'root', 'root', 'registration');
+            mysql_query("INSERT into members (name,userStatus) values('$name', '2')") or die("Could not insert message");
+	?>
+    alert ("approved");
+    
+  }
+
+  function showAlert2() { 
+    alert ("rejected");
+  }
+  </script>
 </head>
 <body>
 	<div class="header">
@@ -48,8 +68,11 @@ if($row['STATUS']=='y')
 echo "<td>approved</td>";
 else if($row['STATUS']=='n')
 echo "<td>rejected</td>";
-else if($row['STATUS']=='w')
-echo "<td>waiting</td>";
+else if($row['STATUS']=='t')
+echo "<td>
+<button onclick=showAlert1()>approve</button>/
+<button onclick=showAlert2()>reject</button>
+</td>";
 
 echo "</tr>";
 }

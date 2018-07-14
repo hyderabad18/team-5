@@ -1,0 +1,19 @@
+CREATE TABLE CUSTOMERS(
+   BID   INT          NOT NULL AUTO_INCREMENT,
+   VERSION  INT              NOT NULL,
+   TITLE VARCHAR (20)     NOT NULL,
+   STATUS  CHAR (1) ,
+    AUTHOR CHAR(25),
+    CATEGORY CHAR(25),      
+   PRIMARY KEY (ID)
+);
+
+CREATE TABLE request(
+   rid   INT          NOT NULL AUTO_INCREMENT,
+   bookname VARCHAR (20)     NOT NULL,
+    author CHAR(25),
+    edition CHAR(25),
+    category CHAR(25),
+   status  CHAR (1),      
+   PRIMARY KEY (rid)
+);
