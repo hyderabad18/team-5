@@ -1,0 +1,1 @@
+CREATE TABLE `iandeye`.`uploads1` ( `username` TEXT NOT NULL , `bookid` INT(100) NOT NULL , `status` BOOLEAN NOT NULL , `filename` BLOB NOT NULL , PRIMARY KEY (`username`(100))) ENGINE = InnoDB;
