@@ -1,0 +1,1 @@
+CREATE TABLE `sample`.`user` ( `username` VARCHAR(100) NOT NULL , `email` VARCHAR(100) NOT NULL , `mobileno` INT(100) NOT NULL , `password` VARCHAR(100) NOT NULL , `role` VARCHAR(100) NOT NULL , `cdate` DATE NOT NULL , `mdate` DATE NOT NULL , PRIMARY KEY (`username`)) ENGINE = InnoDB;
